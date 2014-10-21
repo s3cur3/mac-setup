@@ -35,33 +35,17 @@ echo "" >> ~/.bash_profile
 
 sudo -v
 
-# Add the Auria color profile
+echo "Adding Auria color profile"
 sudo cp misc_setup/Auria_27-2.2-6500.icm /Library/ColorSync/Profiles
 
-# Copy the MMD quicklook generator
+echo "Copying the MultiMarkdown quicklook generator"
 sudo cp -R misc_setup/MultiMarkdownQuickLook.qlgenerator /Library/QuickLook/
 
-# Copy the Hex Color Picker
+echo "Copying the Hex Color Picker"
 sudo cp -R misc_setup/HexColorPicker.colorPicker /Library/ColorPickers/
 
-# Copy the Sublime Text helper
-sudo cp -R misc_setup/Marked.sublime-build ~/Library/Application Support/Sublime Text 2/Packages/User/
+echo "Copying the Sublime Text helper"
+sudo cp -R misc_setup/Marked.sublime-build ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
 
-echo "cp -R aquamacs/. ~/Library/Preferences/Aquamacs\ Emacs/"
-sudo cp -R misc_setup/aquamacs/. ~/Library/Preferences/Aquamacs\ Emacs/
-
-
-echo ""
-echo "###############################################################################"
-echo ""
-echo "You'll need to manually drop Day-O into the applications folder & launch it."
-echo ""
-echo "You'll need to manually install:"
-echo "- Office"
-echo "- iWork"
-echo "- Creative Suite"
-echo "- MacTeX"
-echo "- TotalTerminal"
-echo "###############################################################################"
 
 

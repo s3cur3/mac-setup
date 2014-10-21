@@ -6,5 +6,7 @@ echo "##########################################################################
 
 
 ./mackup.sh
-./mac_os_x_defaults_1.sh
 ./mac_os_x_defaults_2.sh
+./mac_os_x_defaults_1.sh
+./sort_folders_to_top.sh
+

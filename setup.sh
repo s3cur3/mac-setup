@@ -43,6 +43,7 @@ echo -e "\nexport \$PATH=\$(brew --prefix coreutils)/libexec/gnubin:\$PATH\n" >>
 ########################## Install Homebrew binaries ##########################
 
 binaries=(
+  bash-completion
   graphicsmagick
   webkit2png
   rename
@@ -71,20 +72,21 @@ brew install caskroom/cask/brew-cask
 ########################## Install Cask apps ##########################
 apps=(
   alfred
-  bash-completion
+  appcode
+  aquamacs
   bettertouchtool
   calibre
   chicken
-  daisy-disk
+  daisydisk
   dia
-  dropbox
   filezilla
-  f-lux 
+  flux 
   firefox
   flash
-  google-chrome
+  github
   google-drive
-  keepass-x
+  itsycal
+  keepassx
   marked
   max
   opera
@@ -99,8 +101,9 @@ apps=(
   simple-comic
   skype
   sourcetree
-  sublime-text3
-  u-torrent
+  sublime-text
+  totalterminal
+  utorrent
   vagrant
   virtualbox
   vlc
@@ -160,7 +163,36 @@ git clone http://github.com/revans/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
 
 
+echo ""
 echo "###############################################################################"
-echo -e "\n\nOkay, all done!\n\nNow, go set up Dropbox, and continue on to Step 2:\n\t./setup_step_2.sh\n\n"
+echo ""
+echo "You'll need to manually set the following to run on startup:"
+echo "- Itsycal"
+echo "- Skype"
+echo "- uTorrent"
+echo "- Chrome"
+echo "- Airmail"
+echo ""
+echo "You'll need to manually configure:"
+echo "- BetterTouchTool"
+echo "- BetterSnapTool (from App Store)"
+echo ""
+echo "You'll need to manually install:"
+echo "- Chrome"
+echo "- Office"
+echo "- iWork"
+echo "- Creative Suite"
+echo "- MacTeX"
 echo "###############################################################################"
+
+echo ""
+echo ""
+echo "###############################################################################"
+echo "Okay, all done!"
+echo ""
+echo "Now, go set up Dropbox, and continue on to Step 2:"
+echo "      ./setup_step_2.sh"
+echo "###############################################################################"
+echo ""
+echo ""
 
