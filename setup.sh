@@ -53,7 +53,6 @@ binaries=(
   python3
   sshfs
   trash
-  node
   tree
   ack
   hub
@@ -63,6 +62,18 @@ binaries=(
 
 echo "installing binaries..."
 brew install ${binaries[@]}
+
+########################## Install Python packages ##########################
+packages=(
+  Enum
+  jira-python
+  beautifulsoup4
+  matplotlib
+  numpy
+  pyparsing
+)
+echo "installing Python packages..."
+sudo pip install ${binaries[@]}
 
 
 ########################## Install Homebrew Cask ##########################
@@ -183,6 +194,7 @@ echo "- Office"
 echo "- iWork"
 echo "- Creative Suite"
 echo "- MacTeX"
+echo "- Node (http://nodejs.org/download/)"
 echo "###############################################################################"
 
 echo ""
