@@ -86,6 +86,7 @@ apps=(
   appcode
   aquamacs
   bettertouchtool
+  bootchamp
   calibre
   chicken
   daisydisk
@@ -116,6 +117,7 @@ apps=(
   totalterminal
   utorrent
   vagrant
+  versions
   virtualbox
   vlc
   vmware-fusion
