@@ -67,10 +67,13 @@ brew install ${binaries[@]}
 packages=(
   Enum
   jira-python
+  beautifulsoup
   beautifulsoup4
   matplotlib
+  markdown
   numpy
   pyparsing
+  pybars
 )
 echo "installing Python packages..."
 sudo pip install ${binaries[@]}
@@ -87,6 +90,7 @@ apps=(
   aquamacs
   bettertouchtool
   bootchamp
+  cakebrew
   calibre
   chicken
   daisydisk
