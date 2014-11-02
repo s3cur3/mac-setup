@@ -179,6 +179,12 @@ echo "Installing Bash It"
 git clone http://github.com/revans/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
 
+########################## Install RVM ##########################
+curl -sSL https://get.rvm.io | bash
+
+# Required by Sass
+gem install compass
+
 
 echo ""
 echo "###############################################################################"
