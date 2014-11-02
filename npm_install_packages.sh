@@ -13,6 +13,6 @@ packages=(
 
 # install packages
 echo "installing Node.js packages..."
-sudo npm install ${packages[@]}
+sudo npm install -g ${packages[@]}
 
 
