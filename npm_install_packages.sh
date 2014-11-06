@@ -10,6 +10,7 @@ packages=(
   grunt
   grunt-cli
   ionic
+  bower
 )
 
 # install packages
