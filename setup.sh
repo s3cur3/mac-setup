@@ -49,6 +49,7 @@ binaries=(
   rename
   zopfli
   ffmpeg
+  mysql
   python
   python3
   sshfs
