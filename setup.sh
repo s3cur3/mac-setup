@@ -50,6 +50,7 @@ binaries=(
   zopfli
   ffmpeg
   mysql
+  nmap
   python
   python3
   sshfs
@@ -115,6 +116,7 @@ apps=(
   quicksilver
   rubymine
   selfcontrol
+  sequel-pro
   simple-comic
   skype
   sourcetree
