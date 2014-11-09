@@ -9,6 +9,7 @@ packages=(
   bro
   grunt
   grunt-cli
+  cordova
   ionic
   bower
 )
