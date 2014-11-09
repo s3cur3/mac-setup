@@ -11,6 +11,7 @@ packages=(
   grunt-cli
   cordova
   ionic
+  ios-sim
   bower
 )
 
