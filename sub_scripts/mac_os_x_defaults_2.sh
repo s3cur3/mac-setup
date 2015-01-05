@@ -48,4 +48,8 @@ echo "Copying the Sublime Text helper"
 sudo cp -R misc_setup/Marked.sublime-build ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
 
 
+echo "Set up SelfControl.app to have a max block length of 8 hours and a block interval of 30 mins"
+defaults write org.eyebeam.SelfControl MaxBlockLength -int 480
+defaults write org.eyebeam.SelfControl BlockLengthInterval -int 30
+
 
