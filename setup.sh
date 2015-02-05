@@ -49,6 +49,7 @@ binaries=(
   rename
   zopfli
   ffmpeg
+  gpgtools
   mysql
   nmap
   python
@@ -60,6 +61,7 @@ binaries=(
   hub
   git
   multimarkdown
+  wget
 )
 
 echo "installing binaries..."

@@ -7,6 +7,7 @@ echo "#######################################################################"
 
 packages=(
   bro
+  cucumber
   grunt
   grunt-cli
   cordova
