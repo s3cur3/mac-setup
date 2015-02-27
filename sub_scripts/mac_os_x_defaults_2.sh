@@ -41,6 +41,9 @@ sudo cp misc_setup/Auria_27-2.2-6500.icm /Library/ColorSync/Profiles
 echo "Copying the MultiMarkdown quicklook generator"
 sudo cp -R misc_setup/MultiMarkdownQuickLook.qlgenerator /Library/QuickLook/
 
+echo "Copying the QLStephen (quicklook-any-text-file) quicklook generator"
+sudo cp -R misc_setup/QLStephen.qlgenerator /Library/QuickLook/
+
 echo "Copying the Hex Color Picker"
 sudo cp -R misc_setup/HexColorPicker.colorPicker /Library/ColorPickers/
 
