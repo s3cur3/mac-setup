@@ -191,6 +191,8 @@ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 # Required by Sass
 gem install compass
 
+gem install jekyll
+
 
 echo ""
 echo "###############################################################################"
