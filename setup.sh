@@ -54,6 +54,7 @@ binaries=(
   nmap
   python
   python3
+  rbenv
   sshfs
   trash
   tree
@@ -184,8 +185,8 @@ echo "Installing Bash It"
 git clone http://github.com/revans/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
 
-########################## Install RVM ##########################
-curl -sSL https://get.rvm.io | bash
+########################## Install RBENV ##########################
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 
 # Required by Sass
 gem install compass
