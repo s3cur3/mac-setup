@@ -50,6 +50,7 @@ binaries=(
   zopfli
   ffmpeg
   gpgtools
+  imagemagick
   mysql
   nmap
   python
@@ -83,11 +84,6 @@ packages=(
 echo "installing Python packages..."
 sudo pip install ${binaries[@]}
 
-
-########################## Install Homebrew Cask ##########################
-brew install caskroom/cask/brew-cask
-
-
 ########################## Install Cask apps ##########################
 apps=(
   alfred
@@ -101,26 +97,15 @@ apps=(
   daisydisk
   dia
   filezilla
-  flux 
-  firefox
+  flux
   flash
-  github
-  google-drive
-  itsycal
-  keepassx
-  marked
+  github-release
+  java
   max
-  opera
   pandoc
-  pgadmin3
-  phpstorm
-  pycharm
   quicklook-json
-  quicksilver
-  rubymine
   selfcontrol
   sequel-pro
-  simple-comic
   skype
   sourcetree
   sublime-text
@@ -128,7 +113,6 @@ apps=(
   utorrent
   vagrant
   versions
-  virtualbox
   vlc
   vmware-fusion
 )

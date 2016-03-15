@@ -175,8 +175,8 @@ echo "Allowing text selection in Quick Look/Preview in Finder by default"
 defaults write com.apple.finder QLEnableTextSelection -bool true
  
 echo ""
-echo "Displaying full POSIX path as Finder window title"
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+echo "Do not display full POSIX path as Finder window title (that's for the bottom of the window)"
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false 
  
 echo ""
 echo "Disabling the warning when changing a file extension"
