@@ -80,6 +80,7 @@ packages=(
   numpy
   pyparsing
   pybars
+  virtualenv
 )
 echo "installing Python packages..."
 sudo pip install ${binaries[@]}
@@ -90,6 +91,7 @@ apps=(
   appcode
   aquamacs
   bettertouchtool
+  betterzipql
   bootchamp
   cakebrew
   calibre
@@ -104,11 +106,16 @@ apps=(
   max
   pandoc
   quicklook-json
+  qlcolorcode
+  qlimagesize
+  qlprettypatch
+  quicklook-csv
   selfcontrol
   sequel-pro
   skype
   sourcetree
   sublime-text
+  suspicious-package
   totalterminal
   utorrent
   vagrant
