@@ -28,6 +28,7 @@ brew install findutils
 # Install Bash 4
 brew install bash
 
+brew tap brew tap jasonmp85/iwyu
 
 
 
@@ -40,27 +41,40 @@ echo -e "\nexport \$PATH=\$(brew --prefix coreutils)/libexec/gnubin:\$PATH\n" >>
 
 binaries=(
   bash-completion
+  brew-cask-completion
   ccache
   cmake
-  graphicsmagick
-  webkit2png
-  rename
-  zopfli
+  gcc
+  git
+  groovy
   ffmpeg
+  graphicsmagick
+  heroku
   imagemagick
+  iwyu
+  lame
+  libpng
+  multimarkdown
   mysql
   ninja
   nmap
+  opencv
+  openssl
   python3
+  r
   rbenv
+  rename
+  selenium-server-standalone
+  sqlite
   sshfs
+  telnet
   trash
-  tree
-  ack
-  hub
-  git
-  multimarkdown
+  webkit2png
+  webp
   wget
+  x264
+  x265
+  zopfli
 )
 
 echo "installing binaries..."
