@@ -49,7 +49,7 @@ binaries=(
   groovy
   ffmpeg
   graphicsmagick
-  heroku
+  heroku/brew/heroku
   imagemagick
   iwyu
   lame
