@@ -28,10 +28,6 @@ brew install findutils
 # Install Bash 4
 brew install bash
 
-# Install more recent versions of some OS X tools
-brew tap homebrew/dupes
-brew install homebrew/dupes/grep
-
 
 
 
@@ -44,16 +40,15 @@ echo -e "\nexport \$PATH=\$(brew --prefix coreutils)/libexec/gnubin:\$PATH\n" >>
 
 binaries=(
   bash-completion
+  cmake
   graphicsmagick
   webkit2png
   rename
   zopfli
   ffmpeg
-  gpgtools
   imagemagick
   mysql
   nmap
-  python
   python3
   rbenv
   sshfs
@@ -71,40 +66,25 @@ brew install ${binaries[@]}
 
 ########################## Install Python packages ##########################
 packages=(
-  Enum
-  jira-python
-  beautifulsoup
-  beautifulsoup4
   matplotlib
   markdown
   numpy
-  pyparsing
   pybars
   virtualenv
 )
 echo "installing Python packages..."
-sudo pip install ${binaries[@]}
+pip3 install ${binaries[@]}
 
 ########################## Install Cask apps ##########################
 apps=(
   alfred
   appcode
-  aquamacs
   bettertouchtool
-  betterzipql
-  bootchamp
-  cakebrew
-  calibre
-  chicken
   daisydisk
-  dia
-  filezilla
   flux
-  flash
   github-release
   java
   max
-  pandoc
   quicklook-json
   qlcolorcode
   qlimagesize
@@ -146,7 +126,6 @@ fonts=(
   font-lobster
   font-antic-slab
   font-bree-serif
-  font-droid-sans
   font-josefin-slab
   font-arvo
   font-ubuntu
