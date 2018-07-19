@@ -40,6 +40,7 @@ echo -e "\nexport \$PATH=\$(brew --prefix coreutils)/libexec/gnubin:\$PATH\n" >>
 
 binaries=(
   bash-completion
+  ccache
   cmake
   graphicsmagick
   webkit2png
@@ -48,6 +49,7 @@ binaries=(
   ffmpeg
   imagemagick
   mysql
+  ninja
   nmap
   python3
   rbenv
