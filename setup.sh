@@ -142,6 +142,7 @@ fonts=(
   font-lobster
   font-antic-slab
   font-bree-serif
+  font-fira-code
   font-josefin-slab
   font-arvo
   font-ubuntu
