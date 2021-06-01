@@ -131,21 +131,7 @@ defaults write com.apple.BezelServices kDimTime -int 300
 ###############################################################################
 # Screen
 ###############################################################################
- 
-echo ""
-echo "Where do you want screenshots to be stored? (hit ENTER if you want ~/Desktop as default)"
-read screenshot_location
-if [ -z "$1" ]
-then
-  echo ""
-  echo "Setting location to ~/Desktop"
-  defaults write com.apple.screencapture location -string "$HOME/Desktop"
-else
-  echo ""
-  echo "Setting location to ~/$screenshot_location"
-  defaults write com.apple.screencapture location -string "$HOME/$screenshot_location"
-fi
- 
+
 echo ""
 echo "Enabling subpixel font rendering on non-Apple LCDs"
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
@@ -173,15 +159,11 @@ defaults write com.apple.finder ShowStatusBar -bool true
 echo ""
 echo "Allowing text selection in Quick Look/Preview in Finder by default"
 defaults write com.apple.finder QLEnableTextSelection -bool true
- 
-echo ""
-echo "Do not display full POSIX path as Finder window title (that's for the bottom of the window)"
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool false 
- 
+
 echo ""
 echo "Disabling the warning when changing a file extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
- 
+
 echo ""
 echo "Use column view in all Finder windows by default"
 defaults write com.apple.finder FXPreferredViewStyle Clmv
@@ -189,8 +171,7 @@ defaults write com.apple.finder FXPreferredViewStyle Clmv
 echo ""
 echo "Avoiding the creation of .DS_Store files on network volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
- 
- 
+
 echo ""
 echo "Enabling snap-to-grid for icons on the desktop and in other icon views"
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
@@ -295,24 +276,7 @@ echo ""
 echo "Speeding up wake from sleep to 24 hours from an hour"
 # http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
 sudo pmset -a standbydelay 86400
- 
- 
-###############################################################################
-# Sublime Text
-###############################################################################
-echo ""
-echo "Do you use Sublime Text 3 as your editor of choice and is it installed?"
-select yn in "Yes" "No"; do
-  case $yn in
-    Yes ) echo ""
-        echo "Setting Git to use Sublime Text as default editor"
-        git config --global core.editor "subl -n -w"
-        break;;
-    No ) break;;
-  esac
-done
- 
- 
+
 ###############################################################################
 # Kill affected applications
 ###############################################################################

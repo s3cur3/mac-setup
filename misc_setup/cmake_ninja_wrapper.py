@@ -10,7 +10,7 @@ import select
 # ---------------------- Configuration section ------------------------------
 
 REAL_CMAKE = "/usr/local/bin/cmake"
-TRACING = True
+TRACING = False
 
 # --------------------------- Code section ----------------------------------
 
@@ -66,10 +66,7 @@ def call_cmake(passing_args):
 def is_real_project():
     """Detect if called inside clion private directory."""
     cwd = os.getcwd()
-    result = "clion" in cwd and "cmake" in cwd.lower() and "generated" in cwd
-    trace("is_real_project cwd=" + cwd + " result=" + str(result))
-    return True
-    #return result
+    return "clion" in cwd and "cmake" in cwd and "generated" in cwd
 
 class CMakeCache(object):
     """CMake cache management utility"""
@@ -97,7 +94,7 @@ class CMakeCache(object):
 
     def ninjafy(self):
         self.alter('CMAKE_GENERATOR:INTERNAL', 'Ninja')
-        self.alter('CMAKE_MAKE_PROGRAM:FILEPATH', '/usr/local/bin/ninja')
+        self.alter('CMAKE_MAKE_PROGRAM:FILEPATH', '/usr/bin/ninja')
 
     def makefy(self):
         self.alter('CMAKE_GENERATOR:INTERNAL', 'Unix Makefiles')
@@ -105,21 +102,16 @@ class CMakeCache(object):
 
 def ninjafy_argv(original):
     """Replace Unix Makefiles generator with Ninja"""
-    found = False
-    foundG = False
     processed = []
     next_g = False
     for a in original:
         if a == '-G':
             next_g = True
-            foundG = True
         elif next_g and 'Unix Makefiles' in a:
-            #a = a.replace('CodeBlocks - Unix Makefiles', 'Ninja')
-            a = "Ninja"
-            next_g = False
-            found = True
+            a = a.replace('Unix Makefiles', 'Ninja')
+
         processed.append(a)
-    trace("ninjafy_argv => found = " + str(found) + " FoundG=" + str(foundG))
+
     return processed
 
 

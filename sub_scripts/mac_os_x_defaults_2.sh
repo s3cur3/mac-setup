@@ -126,26 +126,5 @@ defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnab
 echo "alias ls='ls -GpFh'" >> ~/.bash_profile
 echo "" >> ~/.bash_profile
 
-sudo -v
-
-echo "Adding Auria color profile"
-sudo cp misc_setup/Auria_27-2.2-6500.icm /Library/ColorSync/Profiles
-
-echo "Copying the MultiMarkdown quicklook generator"
-sudo cp -R misc_setup/MultiMarkdownQuickLook.qlgenerator /Library/QuickLook/
-
-echo "Copying the QLStephen (quicklook-any-text-file) quicklook generator"
-sudo cp -R misc_setup/QLStephen.qlgenerator /Library/QuickLook/
-
-echo "Copying the Hex Color Picker"
-sudo cp -R misc_setup/HexColorPicker.colorPicker /Library/ColorPickers/
-
-echo "Copying the Sublime Text helper"
-sudo cp -R misc_setup/Marked.sublime-build ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
-
-
-echo "Set up SelfControl.app to have a max block length of 8 hours and a block interval of 30 mins"
-defaults write org.eyebeam.SelfControl MaxBlockLength -int 480
-defaults write org.eyebeam.SelfControl BlockLengthInterval -int 30
 
 
