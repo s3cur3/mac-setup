@@ -68,7 +68,7 @@ fonts=(
 
 # install fonts
 echo "installing fonts..."
-brew cask install ${fonts[@]}
+brew install ${fonts[@]}
 
 
 ########################## Install Bash It ##########################
