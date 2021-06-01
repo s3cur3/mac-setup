@@ -15,6 +15,16 @@ fi
 # Update homebrew recipes
 brew update
 
+# Clone the mac setup repo
+echo "Cloning mac-setup.git"
+brew install git
+
+cd ~/Documents
+mkdir repos
+cd repos
+git clone https://github.com/s3cur3/mac-setup.git
+cd mac-setup
+
 # Install bundle and install everything in the Brewfile
 brew tap Homebrew/bundle
 echo "installing apps..."
