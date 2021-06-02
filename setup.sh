@@ -38,7 +38,7 @@ echo -e "\nif [ -f `brew --prefix`/etc/bash_completion ]; then\n    . `brew --pr
 
 
 ########################## Get common fonts ##########################
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 
 fonts=(
   font-open-sans-condensed
@@ -59,7 +59,6 @@ fonts=(
   font-alegreya
   font-merriweather
   font-lato
-  font-m-plus
   font-clear-sans
   font-roboto
   font-roboto-slab
