@@ -30,15 +30,14 @@ defaults write com.apple.dock no-bouncing -bool TRUE
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
 
-# 40 px tall dock
-defaults write com.apple.dock tilesize -int 40
+# 38 px tall dock
+defaults write com.apple.dock tilesize -int 38
 
-
+# Disable click-and-drag to resize the dock
+defaults write com.apple.dock size-immutable -bool true
 
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
-
-
 
 
 ###############################################################################
